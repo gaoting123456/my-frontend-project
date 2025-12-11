@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 元素选择器 */
+      h1 {
+        color: red;
+      }
+      /* 类选择器 */
+      .demo {
+        background-color: aqua;
+        color: blue;
+      }
+      /* id选择器 */
+      #id {
+        color: yellow;
+      }
+      /* 通用选择器 */
+      * {
+        font-size: 25px;
+        font-weight: bolder;
+      }
+      /* 子元素选择器 */
+      .father > .son {
+        color: red;
+      }
+      /* 后代选择器 */
+      .father p {
+        color: rgb(99, 55, 55);
+      }
+      /* 相邻兄弟选择器 */
+      h3 + p {
+        color: blue;
+      }
+      /* 伪类选择器 */
+      #element:hover {
+        background-color: red;
+      }
+      /* 选择第一个元素
+      :first-child 
+      :nth-child ()
+      :active
+      */
+      /* 伪元素选择器 
+       ::after
+      ::before
+      */
+     
+
+    </style>
+  </head>
+  <body>
+    <h1>这是一个元素选择器</h1>
+    <h2 class="demo">这是一个类选择器</h2>
+    <h2 id="id">这是一个id选择器</h2>
+    <h2>这是一个通用选择器</h2>
+    <div class="father">
+      <p class="son">元素选择器例子</p>
+      <div>
+        <p class="grandfather">后代选择器</p>
+      </div>
+    </div>
+
+    <p>普通的一个p标签</p>
+    <h3>相邻兄弟选择示例</h3>
+    <p>另一个p标签</p>
+    <h3 id="element">这是一个伪类选择器</h3>
+  </body>
+</html>
