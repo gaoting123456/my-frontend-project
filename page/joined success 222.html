@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joined Success</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Montserrat", sans-serif;
+      }
+      /*默认定位*/
+      .father {
+        width: 393px;
+        height: 696px;
+        background-color: #f1f4ff;
+        margin: 0px auto;
+      }
+      .box1 {
+        position: relative;
+        width: 361px;
+        height: 204px;
+        background-color: #fff;
+        top: 8px;
+        left: 16px;
+        border-radius: 16px;
+      }
+      .icon {
+        position: absolute;
+        font-size: 48px;
+        top: 49px;
+        left: 50%;
+        transform: translate(-50%);
+      }
+      .title {
+        position: absolute;
+        color: #17215c;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 22px;
+        top: 108px;
+        left: 50%;
+        transform: translate(-50%);
+      }
+      .name {
+        position: absolute;
+        color: #17215c;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 22px;
+        top: 147px;
+        left: 50%;
+        transform: translate(-50%);
+      }
+      .text {
+        position: absolute;
+        color: #667d98;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+        bottom: 16px;
+        left: 32px;
+      }
+      .box2 {
+        position: relative;
+        width: 361px;
+        height: 323px;
+        background-color: #fff;
+        border-radius: 16px;
+        top: 16px;
+        left: 16px;
+      }
+      .text2 {
+        position: relative;
+        color: #17215c;
+        text-align: center;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        top: 16px;
+        width: 285px;
+        height: 34px;
+        left: 50%; /* 水平居中 */
+        transform: translate(-50%);
+        margin-bottom: 16px;
+      }
+      .process {
+        position: relative;
+        background-color: #fef5f1;
+        width: 312px;
+        padding-top: 12px;
+        padding-bottom: 13px;
+        padding-left: 12px;
+        top: 16px;
+        border-radius: 8px;
+        left: 35px;
+        box-sizing: border-box;
+        margin-top: 12px;
+        color: #17215c;
+        font-size: 14px;
+        font-weight: 400;
+      }
+      .box3 {
+        position: relative;
+        width: 393px;
+        height: 98px;
+        /*原本的底部位置是box1的高度+box2高度+box3高度=527px 总高696px-527=169px 
+        （因为是按照原始位置的底部做参考往下移动随所以不算box3本身高度 169-98=71px bottom本身特殊 -的是往下移动）*/
+        bottom: -71px;
+        background-color: #fff;
+        border-radius: 50px 50px 0px 0px;
+      }
+      button {
+        position: relative;
+        width: 368px;
+        height: 48px;
+        border-radius: 100px;
+        top: 8px;
+        left: 13px;
+        border: none;
+        background: linear-gradient(to right, #ff755a, #ff3700);
+        color: #fff;
+        text-align: center;
+        font-size: 16px;
+      }
+      .box4 {
+        position: absolute;
+        height: 250px;
+        width: 20px;
+        left: 9px;
+        top: 80px;
+      }
+      .cirle {
+        position: relative;
+        width: 8px;
+        height: 8px;
+        border: solid 4px #ff4d1f;
+        border-radius: 50%;
+        background-color: transparent;
+      }
+      .line {
+        position: absolute;
+        width: 0;
+        border-left: 1px dashed #ffddcd;
+        height: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="father">
+      <div class="box1">
+        <div class="icon">🎉</div>
+        <span class="title">Joined Success</span>
+        <span class="name">Hi, Hazel </span>
+        <span class="text">Your task has been claimed successfully.</span>
+      </div>
+      <div class="box2">
+        <div class="text2">
+          Follow these steps to finish the ad task and get your bonus.
+        </div>
+        <div class="box4">
+          <div class="cirle" style="margin-bottom: 58px"></div>
+          <div
+            class="line"
+            style="margin-top: -58px; left: 7px; height: 62px"
+          ></div>
+          <div class="cirle" style="margin-bottom: 55px"></div>
+          <div
+            class="line"
+            style="margin-top: -56px; left: 7px; height: 60px"
+          ></div>
+          <div class="cirle" style="margin-bottom: 39px"></div>
+          <div
+            class="line"
+            style="margin-top: -39px; left: 7px; height: 43px"
+          ></div>
+          <div class="cirle"></div>
+        </div>
+        <div class="process">Add Showcase</div>
+        <div class="process" style="font-weight: 500 !important">
+          Post your remix of the mashup video before 24:00 on May 20th.
+          <span style="display: inline-block; font-size: 12px; color: #667d98"
+            >You need download mashup video first. </span
+          >
+        </div>
+        <div class="process">Video Reviewed</div>
+        <div class="process">Earn Reward</div>
+      </div>
+      <div class="box3">
+        <button>Complete tasks to earn Bonus</button>
+      </div>
+    </div>
+  </body>
+</html>
