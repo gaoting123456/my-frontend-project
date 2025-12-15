@@ -77,6 +77,7 @@
         margin-bottom: 16px;
       }
       .process {
+        position: relative;
         background-color: #fef5f1;
         padding: 12px 0px 12px 12px;
         border-radius: 8px;
@@ -87,6 +88,7 @@
         font-style: Medium;
         font-weight: 400;
         line-height: normal;
+        padding-right: 16px;
       }
       .special {
         font-weight: 500;
@@ -119,6 +121,10 @@
         width: 100%;
         padding: 18px 0;
       }
+      .img {
+        position: absolute;
+        right: 16px;
+      }
     </style>
   </head>
   <body>
@@ -131,7 +137,11 @@
       </div>
       <div class="content">
         <p>Follow these steps to finish the ad task and get your bonus.</p>
-        <div class="process">Add Showcase</div>
+        <div class="process">
+          Add Showcase
+          <img src="../image/Group 4119.jpg" class="img" />
+        </div>
+
         <div class="process special">
           Post your remix of the mashup video before 24:00 on May 20th.
           <p class="process-small">You need download mashup video first. </p>
@@ -143,7 +153,6 @@
     <div class="container-footer">
       <div class="footer"><button>Complete tasks to earn Bonus</button></div>
       <div class="footer-bottom"></div>
-      
     </div>
   </body>
 </html>
