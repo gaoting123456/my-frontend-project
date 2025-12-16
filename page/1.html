@@ -1,11 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .example {
+        font-family: system-ui;
+        font-size: 1.2rem;
+      }
+
+      .example {
+        & > a {
+          color: tomato;
+          &:hover {
+            color: ivory;
+            background-color: tomato;
+          }
+          &:focus {
+            color: ivory;
+            background-color: tomato;
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <p class="example">
+      这段文字<a href="#">包含一个链接</a>，尝试悬停或聚焦它。
+    </p>
+  </body>
 </html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Share</title>
+    <style>
+      body {
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+        font-family: "Montserrat", sans-serif;
+      }
+      .container {
+        position: relative;
+        width: 393px;
+        height: 100vh;
+        background-color: #f1f4ff;
+        margin: 0px auto;
+        padding: 4px 0;
+      }
+      .header {
+        background-color: #fff;
+        width: 100%;
+        padding: 13px 0 17px;
+        padding: 17px 0;
+      }
+      .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .time-all {
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+        margin-left: 12px;
+      }
+      .time {
+        background: #d8fffe;
+        border-radius: 100px;
+        border: none;
+        padding: 4px 10px;
+        &:focus{
+        color: #17215C;
+        background: #22F5EE;
+        }
+      }
+      .icon {
+        background: #667d98;
+        height: 12px;
+        width: 12px;
+        text-align: center;
+        display: inline-block;
+        margin-right: 13px;
+      }
+      .box {
+        display: flex;
+        flex-direction: row;
+        gap: 18px;
+        margin-left: 25px;
+        margin-top: 20px;
+      }
+      .box1 {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+      }
+      .big {
+        color: rgba(23, 33, 92, 0.9);
+        font-size: 16px;
+        font-weight: 600;
+      }
+      .small {
+        color: #667d98;
+        font-size: 12px;
+        font-weight: 400;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="top">
+          <div class="time-all">
+            <button class="time">All</button>
+            <button class="time">Today</button>
+            <button class="time">7 Day</button>
+            <button class="time">30 Day</button>
+            <button class="time">90 Day</button>
+          </div>
+          <div class="icon"></div>
+        </div>
+
+        <div class="box">
+          <div class="box1">
+            <div class="box-up">
+              <p class="big">$1.03k</p>
+              <p class="small">Total GMV</p>
+            </div>
+            <div class="box-up">
+              <p class="big">180</p>
+              <p class="small">Total Orders</p>
+            </div>
+          </div>
+          <div class="box1">
+            <div class="box-up">
+              <p class="big">$2.03k</p>
+              <p class="small">Settled commission</p>
+            </div>
+            <div class="box-up">
+              <p class="big">200</p>
+              <p class="small">Settled Orders</p>
+            </div>
+          </div>
+          <div class="box1">
+            <div class="box-up">
+              <p class="big">$1.03k</p>
+              <p class="small">Est commission</p>
+            </div>
+            <div class="box-up">
+              <p class="big">180</p>
+              <p class="small">Est orders</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

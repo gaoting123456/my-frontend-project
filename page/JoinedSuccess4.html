@@ -16,18 +16,14 @@
       .container {
         position: relative;
         width: 393px;
-        height: 598px;
+        height: 100vh;
         background-color: #f1f4ff;
         margin: 0px auto;
-        padding: 8px 16px;
+        
       }
-      .container-footer {
-        position: relative;
-        width: 393px;
-        height: 98px;
-        background-color: #f1f4ff;
-        margin: 0px auto;
-        display: flex;
+      .container-body {
+        width: 100%;
+        padding: 8px 16px;
       }
       .header {
         background-color: #fff;
@@ -35,6 +31,7 @@
         border-radius: 16px;
         text-align: center;
         padding-top: 49px;
+        padding-bottom: 16px;
       }
       .icon {
         font-size: 48px;
@@ -77,12 +74,12 @@
         background-color: #fef5f1;
         padding: 12px 0px 12px 12px;
         border-radius: 8px;
-        margin: 12px -24px 12px -3px;
+        margin-bottom: 12px;
+        margin-top: 16px;
         text-align: left;
         color: #17215c;
         font-size: 14px;
         font-weight: 400;
-        line-height: normal;
         padding-right: 16px;
       }
       .special {
@@ -93,17 +90,12 @@
         font-size: 12px;
       }
       .footer {
-        width: 100%;
+        position: fixed;
         background-color: #fff;
         border-radius: 50px 50px 0px 0px;
-        padding: 8px 12px;
-      }
-
-      .footer-bottom {
-        width: 100%;
-        background-color: #fff;
-        position: relative;
-        flex: 1;
+        padding: 8px 16px 42px;
+        bottom: 0;
+        width: 393px;
       }
       button {
         position: relative;
@@ -113,8 +105,8 @@
         color: white;
         font-size: 13px;
         text-align: center;
-        width: 100%;
         padding: 18px 0;
+        width: 100%;
       }
       .img {
         position: absolute;
@@ -124,35 +116,31 @@
   </head>
   <body>
     <div class="container">
-      <div class="header">
-        <div class="icon">🎉</div>
-        <p class="success">Joined Success</p>
-        <p class="name">Hi, Hazel</p>
-        <p class="content1">Your task has been claimed successfully.</p>
-      </div>
-      <div class="content">
-        <p>Follow these steps to finish the ad task and get your bonus.</p>
-        <div class="process">
-          Add Showcase
-          <img src="../image/Group 4119.jpg" class="img" />
+      <div class="container-body">
+        <div class="header">
+          <div class="icon">🎉</div>
+          <p class="success">Joined Success</p>
+          <p class="name">Hi, Hazel</p>
+          <p class="content1">Your task has been claimed successfully.</p>
         </div>
+        <div class="content">
+          <p>Follow these steps to finish the ad task and get your bonus.</p>
+          <div class="process">
+            Add Showcase
+            <img src="../image/Group 4119.jpg" class="img" />
+          </div>
 
-        <div class="process special">
-          Post your remix of the mashup video before 24:00 on May 20th.
-          <p class="process-small">You need download mashup video first. </p>
+          <div class="process special">
+            Post your remix of the mashup video before 24:00 on May 20th.
+            <p class="process-small">You need download mashup video first. </p>
+          </div>
+          <div class="process">Video Reviewed</div>
+          <div class="process">Earn Reward</div>
         </div>
-        <div class="process">Video Reviewed</div>
-        <div class="process">Earn Reward</div>
       </div>
 
-      <div class="container-footer">
-        <div class="footer">
-          <button>
-            Complete tasks to <br />
-            earn Bonus
-          </button>
-        </div>
-        <div class="footer-bottom"></div>
+      <div class="footer">
+        <button>Complete tasks to earn Bonus</button>
       </div>
     </div>
   </body>

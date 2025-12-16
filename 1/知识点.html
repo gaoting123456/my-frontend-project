@@ -6,3 +6,22 @@ inline-block: 行内块元素
 什么的没用
 
 3. p标签默认margin: 16px;
+
+4.嵌套选择器
+没空格（我自己）
+.parent-rule {
+  &:hover {
+  }
+} ==
+ .parent-rule:hover{
+
+ }
+
+有空格（里面的人）
+.parent-rule {
+  & :hover {
+  }
+} 
+== 
+.parent-rule :hover
+
