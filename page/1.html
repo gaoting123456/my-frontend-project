@@ -5,29 +5,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      .example {
-        font-family: system-ui;
-        font-size: 1.2rem;
-      }
+      /* ① 鼠标移到按钮才变色 */
 
-      .example {
-        & > a {
-          color: tomato;
-          &:hover {
-            color: ivory;
-            background-color: tomato;
-          }
-          &:focus {
-            color: ivory;
-            background-color: tomato;
-          }
+      /* button {
+        background-color: gray;
+
+        &:hover {
+          background-color: blue;
+        }
+      /* } */
+      /* ② 输入框被操作时有边框 */ 
+      /* input:focus {
+        outline: none;
+      }
+      input {
+        border: 1px solid gray;
+        &:focus-visible {
+          border: 1px solid red;
         }
       }
+      /* ③ 键盘 Tab 选中按钮才显示高亮 */
+      /* .save {
+        &:focus-visible {
+          border: 1px solid blue;
+        }
+      } */ 
+      /* ④ 输入框有内容时 label 变小并上移 */
+      /* .field {
+        width: fit-content;
+        position: relative;
+      }
+      input {
+        padding: 12px 8px;
+      }
+      label {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        transition: 0.2s;
+        color: #999;
+      }
+
+      input:not(:placeholder-shown) + label {
+        top: -6px;
+        font-size: 12px;
+        background: white;
+        padding: 0 4px;
+      } */
+      /* ⑤ 必填但没填 → 红色 */
+      /* input {
+        &:required:invalid {
+          border-color: red;
+        }
+        &:required:valid {
+          border-color: black;
+        }
+      }  */
+      /* ⑥ 选中复选框时文字变色*/
+      /* #c1:checked + label{
+        color: green;
+      } */
+       /* ⑦ label 后面紧跟 input 才高亮 */
+       /* label + input{
+        border:1px solid blue;
+       } */
+        /* ⑧ input 聚焦时，外层容器变色 */
+        /* .field:has(input:focus){
+          background: blue;
+        } */
     </style>
   </head>
+
   <body>
-    <p class="example">
-      这段文字<a href="#">包含一个链接</a>，尝试悬停或聚焦它。
-    </p>
+    <!-- ① -->
+
+    <!-- <button>提交</button> -->
+    <!-- ②  -->
+    <!-- <input type="text" /> -->
+    <!-- ③ -->
+    <!-- <button class="save">保存</button>
+
+    <br /><br /> -->
+    <!-- ④ -->
+    <!-- <div class="field">
+      <input id="name" placeholder=" " />
+      <label for="name">用户名</label>
+    </div>
+    <br /><br /> -->
+    <!-- ⑤ -->
+    <!-- <input type="text" required /> -->
+    <!-- ⑥ -->
+    <!-- <input type="checkbox" id="c1" />
+    <label for="c1">我已阅读</label> -->
+    <!-- ⑦  -->
+     <!-- <label>邮箱</label>
+     <input type="email"> -->
+     <!-- ⑧ -->
+      <!-- <div class="field">
+  <input type="text"> -->
+</div>
+
+
   </body>
 </html>

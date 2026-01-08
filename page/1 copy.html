@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* ① 聚焦 + 有内容 = 成功态 */
+      /* input{
+      border:1px solid gray;
+      &:focus{
+        border:1px solid blue;
+      }
+      &:not(:placeholder-shown){
+        border: 1px solid green;
+      }
+    } */
+      /* ② 键盘用户专属高亮 + 悬浮提示 */
+      /* button {
+        &:hover {
+          background-color: rgb(199, 197, 197);
+        }
+        &:focus {
+          outline: none;
+        }
+        &:focus-visible {
+          border: blue solid 2px;
+        }
+      } */
+      /* ③ 表单项整体联动（父子联动） */
+      /* .field{
+        &:has(input:focus){
+          border:1px solid blue;
+        }
+        &:has(input:invalid){
+          border:1px solid red;
+        }
+      } */
+      /* ④ 选中状态 + 结构限制 */
+      /* #agree{
+        & + label{
+          color:gray;
+        }
+        &:checked + label{
+          color: green;
+        }
+       } */
+      /* ⑤ 浮动 label · 完整判定（综合题 ⭐） */
+      /* .field {
+        position: relative;
+        width: fit-content;
+      }
+      input {
+        padding: 12px 8px;
+        outline: none;
+      }
+      label {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        transition: 0.2s;
+        color: #999;
+      } */
+      /* input:focus + label,
+      input:not(:placeholder-shown) + label {
+        top: -4px;
+        font-size: 12px;
+        background: white;
+        padding: 0 4px;
+      } */
+      /* input:not(:placeholder-shown) + label {
+        color: #232222;
+      }
+
+      .btn.loading::after {
+        display: block;
+        content: "";
+        height: 16px;
+        width: 16px;
+        background-color: yellow;
+        animation: spin 1s linear infinite;
+      }
+
+      .container {
+        border: 2px solid red;
+        padding: 10px;
+      } */
+
+      /* .item {
+        width: 100px;
+        height: 50px;
+        background: lightblue;
+      }
+
+      .left {
+        float: left;
+      }
+
+      .right {
+        float: right;
+      }
+      .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+      } */
+       /* p::first-line{
+        color: red;
+        font-size: 20px;
+       } */
+   /* p::first-letter {
+  font-size: 3em;
+  float: left;
+  line-height: 1;
+  margin-right: 8px;
+}
+li::marker {
+
+content: "👉 ";
+} */
+ /* p{
+  white-space: nowrap;
+  overflow: hidden;
+text-overflow: ellipsis
+ }
+ .btn {
+  display: inline-flex;
+  align-items: center;
+   width: 60px;  
+   white-space: nowrap;
+ }
+svg{
+  background-color: aqua;
+} */
+li{
+  list-style-position: inside;/*把marker放在里面*/
+ white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+}
+li::marker {
+   color: red;
+}
+::selection {
+    background: black;
+  color: white;
+  text-shadow: 0 0 3px red;
+
+}
+
+    </style>
+  </head>
+  <body>
+    <!-- ① -->
+    <!-- <input type="text" placeholder=" "> -->
+    <!-- ② -->
+    <!-- <button>提交</button> -->
+    <!-- ③ -->
+    <!-- <div class="field">
+  <input type="email" required> -->
+    <!-- ④ -->
+    <!-- <input type="checkbox" id="agree">
+<label for="agree">我同意协议</label> -->
+    <!-- ⑤ -->
+    <!-- <div class="field">
+      <input id="user" placeholder=" " />
+      <label for="user">用户名</label>
+
+      <button class="btn loading">提交</button>
+
+      <div class="container clearfix">
+        <div class="item left">左浮动</div>
+        <div class="item right">右浮动</div> -->
+        <p>这是一段很长的文字    
+</p>
+<button class="btn">
+  <svg width="16" height="16"></svg>
+  <span>保存 设置</span>
+</button>
+
+
+         <ul>
+  <li>苹果aaaaaaaaaaaaaaaaaaaaa啊啊啊啊aaaaaaaaaaaaaaaaa啊啊啊啊啊啊啊啊苹果aaaaaaaaaaaaaaaaaaaaa啊啊啊啊aaaaaaaaaaaaaaaaa啊啊啊啊啊啊啊啊苹果aaaaaaaaaaaaaaaaaaaaa啊啊啊啊aaaaaaaaaaaaaaaaa啊啊啊啊啊啊啊啊苹果aaaaaaaaaaaaaaaaaaaaa啊啊啊啊aaaaaaaaaaaaaaaaa啊啊啊啊啊啊啊啊苹果aaaaaaaaaaaaaaaaaaaaa啊啊啊啊aaaaaaaaaaaaaaaaa啊啊啊啊啊啊啊啊
+  </li>
+  <li>香蕉</li>
+</画l>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
