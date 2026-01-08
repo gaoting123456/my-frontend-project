@@ -23,13 +23,13 @@
       .black {
         width: 100%;
       }
-      .box1 {
+      .back-blue {
         background-color: #22f5ee;
         width: 100%;
         border-radius: 20px 20px 0px 0px;
         padding-top: 6px;
       }
-      .ranks {
+      .back-white {
         background-color: #ffffff;
         border-radius: 20px 20px 0px 0px;
       }
@@ -48,7 +48,7 @@
         & .text {
           color: #667d98;
           font-size: 12px;
-          margin: 9px 38px;
+          margin: 9px 0;
         }
         & .get {
           display: flex;
@@ -93,7 +93,7 @@
   border-right: 18px solid transparent;
   border-top: 18px solid #22f5ee;
 } */
-      .box2 {
+      .get-line{
         display: flex;
         flex-direction: column;
         gap: 8px;
@@ -249,12 +249,11 @@
     </style>
   </head>
   <body>
-    <div class="container">
+    <main class="container">
       <img src="/image/black.png" class="black" />
-
-      <div class="box1">
-        <div class="ranks">
-          <div class="rank">
+      <div class="back-blue">
+        <div class="back-white">
+          <section class="rank">
             <span class="title">Ranking Rewards</span>
             <p class="text">
               Creators with showcases, use the 20 products below to post your
@@ -374,7 +373,7 @@
                 <span>$3000</span>
               </div>
             </div>
-            <div class="box2">
+            <div class="get-line">
               <span class="blue"
                 >Ranks #4 - #10
                 <span class="price">
@@ -502,8 +501,8 @@
                 <span>GMV: 16.8K</span>
               </div>
             </div>
-          </div>
-          <div class="selling">
+          </section>
+          <section class="selling">
             <div class="selling-box">
               <span class="title-top">Top selling Products list</span>
               <span class="earn">
@@ -571,9 +570,9 @@
                 </div>
               </div>
             </div>
-          </div>
+          </section>
         </div>
       </div>
-    </div>
+    </main>
   </body>
 </html>
